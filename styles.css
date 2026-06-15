@@ -298,16 +298,19 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
 /* ============================================================
    ABOUT
    ============================================================ */
-.about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: start; }
+.about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: stretch; }
 .about__card p { margin-bottom: 1rem; font-size: 1.05rem; }
 .about__card p:last-child { margin-bottom: 0; }
 
+/* wrapper stretches to the about card's height; facts fill it and scroll */
+.about__facts-wrap { position: relative; }
 .about__facts {
+  position: absolute;
+  inset: 0;
   list-style: none;
   display: grid;
   gap: 1rem;
-  /* fixed-height scroll panel: shows ~5 facts, rest scroll */
-  height: 384px;
+  grid-auto-rows: max-content;
   overflow-y: auto;
   background: #fff;
   border: var(--border);
@@ -450,6 +453,8 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
   }
   .hero__card { margin-top: 2rem; transform: rotate(1deg); }
   .about, .work, .stack { grid-template-columns: 1fr; }
+  /* on mobile, stack normally with a capped scroll height */
+  .about__facts { position: static; inset: auto; max-height: 360px; }
   .projects { grid-template-columns: 1fr; }
   .project--feature { grid-column: span 1; }
 
