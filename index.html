@@ -1,12 +1,260 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting…</title>
-    <meta http-equiv="refresh" content="0; URL=https://sashyo.github.io/secureAF/">
-    <link rel="canonical" href="https://sashyo.github.io/secureAF/">
-  </head>
-  <body style="text-align:center; padding-top:2rem;">
-    Redirecting to <a href="https://sashyo.github.io/secureAF/">https://sashyo.github.io/secureAF/</a>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sashyo // software engineer</title>
+  <meta name="description" content="sashyo — software engineer at Tide Foundation. Cryptography enthusiast. Builder of KeyleSSH, Motherlode and other open-source things." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23ffd23f'/%3E%3Ctext x='50' y='72' font-size='62' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%23000'%3E%26gt;%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="nav__brand">
+      <span class="nav__sigil">&gt;_</span>
+      <span class="nav__name">sashyo</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#projects">projects</a>
+      <a href="#stack">stack</a>
+      <a href="#contact" class="nav__cta">contact</a>
+    </nav>
+    <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__tags">
+        <span class="tag tag--pink">software engineer</span>
+        <span class="tag tag--cyan">cryptography</span>
+        <span class="tag tag--lime">open source</span>
+      </div>
+      <h1 class="hero__title">
+        Hi, I'm <span class="hl">sashyo</span>.<br />
+        I build things that<br />
+        <span class="hero__rotator" aria-hidden="true"></span>
+      </h1>
+      <p class="hero__sub">
+        Software engineer at <a href="https://tide.org" target="_blank" rel="noopener" class="inline-link">Tide Foundation</a>,
+        working on cryptography that keeps secrets even from the people running it.
+        Still learning — and loving every line of it.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">See my work →</a>
+        <a href="https://github.com/sashyo" target="_blank" rel="noopener" class="btn btn--ghost">github / sashyo</a>
+      </div>
+
+      <div class="hero__card" aria-hidden="true">
+        <div class="hero__card-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="hero__card-title">~/whoami.sh</span>
+        </div>
+        <pre class="hero__code"><span class="c-com"># who?</span>
+<span class="c-key">name</span>     = <span class="c-str">"sashyo"</span>
+<span class="c-key">role</span>     = <span class="c-str">"software engineer @ Tide"</span>
+<span class="c-key">loves</span>    = [<span class="c-str">"code"</span>, <span class="c-str">"crypto"</span>, <span class="c-str">"hard problems"</span>]
+<span class="c-key">status</span>   = <span class="c-str">"forever learning"</span>
+<span class="c-com"># keys never exist as a whole. neither do bugs (hopefully).</span></pre>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>CRYPTOGRAPHY ✦ ZERO TRUST ✦ THRESHOLD SIGNING ✦ OPEN SOURCE ✦ DECENTRALISATION ✦ KEYLESS ✦ ALWAYS LEARNING ✦&nbsp;</span>
+        <span>CRYPTOGRAPHY ✦ ZERO TRUST ✦ THRESHOLD SIGNING ✦ OPEN SOURCE ✦ DECENTRALISATION ✦ KEYLESS ✦ ALWAYS LEARNING ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="section__head">
+        <h2 class="section__title">about</h2>
+        <span class="section__num">01</span>
+      </div>
+      <div class="about">
+        <div class="about__card panel">
+          <p>
+            I'm a software engineer who genuinely <strong>loves to code</strong>. I spend my days
+            building secure systems and my nights poking at how cryptography actually works
+            under the hood.
+          </p>
+          <p>
+            At <strong>Tide Foundation</strong> I work on <em>Ineffable Cryptography</em> — a model where
+            secret keys are <strong>born fragmented</strong> and never assembled in one place, not even
+            by the people running the infrastructure. It's the kind of problem that keeps me curious.
+          </p>
+          <p>
+            I'm honest about where I'm at: I'm interested in cryptography but I still have
+            <strong>much, much to learn</strong>. That's the fun part.
+          </p>
+        </div>
+        <ul class="about__facts">
+          <li class="panel panel--yellow"><span class="about__k">now</span><span class="about__v">Engineer @ Tide</span></li>
+          <li class="panel panel--pink"><span class="about__k">into</span><span class="about__v">Applied crypto</span></li>
+          <li class="panel panel--cyan"><span class="about__k">handle</span><span class="about__v">sashyo</span></li>
+          <li class="panel panel--lime"><span class="about__k">mode</span><span class="about__v">Always learning</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section id="work" class="section">
+      <div class="section__head">
+        <h2 class="section__title">work</h2>
+        <span class="section__num">02</span>
+      </div>
+      <div class="work panel panel--accent">
+        <div class="work__main">
+          <div class="work__role">
+            <h3>Software Engineer</h3>
+            <a href="https://tide.org" target="_blank" rel="noopener" class="work__org">Tide Foundation ↗</a>
+          </div>
+          <p class="work__desc">
+            Tide is building <strong>true zero-trust</strong> security on top of multi-party cryptography.
+            Authority keys live shattered across a decentralised network of independent nodes — the
+            <strong>ORKs</strong> (Orchestrated Recluders of Keys) — so no single person or org ever holds
+            the "keys to the kingdom." I help turn that breakthrough into software developers can actually ship.
+          </p>
+          <ul class="work__points">
+            <li>Threshold &amp; multi-party cryptography in production systems</li>
+            <li>Decentralised key management across the Tide Cybersecurity Fabric</li>
+            <li>Developer-facing tooling around <strong>TideCloak</strong> (identity, immunity &amp; access)</li>
+          </ul>
+        </div>
+        <div class="work__chips">
+          <span class="chip">Ineffable Cryptography</span>
+          <span class="chip">Zero Trust</span>
+          <span class="chip">Threshold Sigs</span>
+          <span class="chip">TideCloak</span>
+          <span class="chip">Decentralisation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <div class="section__head">
+        <h2 class="section__title">projects</h2>
+        <span class="section__num">03</span>
+      </div>
+      <div class="projects">
+
+        <article class="project panel project--feature">
+          <div class="project__top">
+            <span class="project__badge badge--pink">flagship</span>
+            <a class="project__ext" href="https://github.com/sashyo/keylessh" target="_blank" rel="noopener" aria-label="KeyleSSH on GitHub">↗</a>
+          </div>
+          <h3 class="project__name">KeyleSSH</h3>
+          <p class="project__tagline">Truly keyless SSH. Private keys don't exist — not on servers, not in bastions, not in browsers, not even in memory.</p>
+          <p class="project__body">
+            SSH authorization signing happens across a decentralised network of <strong>ORKs</strong> using
+            threshold cryptography, so no single node can ever sign alone. Browser-side terminal, policy-based
+            RBAC via TideCloak, even browser-based RDP and a QUIC VPN with NAT hole-punching.
+          </p>
+          <ul class="project__tech">
+            <li>TypeScript</li><li>Rust</li><li>Threshold Crypto</li><li>WebRTC / QUIC</li><li>xterm.js</li>
+          </ul>
+        </article>
+
+        <article class="project panel">
+          <div class="project__top">
+            <span class="project__badge badge--cyan">open source</span>
+            <a class="project__ext" href="https://github.com/sashyo/motherlode" target="_blank" rel="noopener" aria-label="Motherlode on GitHub">↗</a>
+          </div>
+          <h3 class="project__name">Motherlode</h3>
+          <p class="project__tagline">A multi-chain wallet covering 16 blockchains from a single unified interface.</p>
+          <p class="project__body">
+            One wallet spanning Solana, Stellar, XRPL, Cardano, Polkadot, Cosmos, Monero and more —
+            with authentication and <strong>threshold key signing handled by TideCloak</strong>, so no
+            full private key is ever assembled on any one device.
+          </p>
+          <ul class="project__tech">
+            <li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Threshold Signing</li><li>TideCloak</li>
+          </ul>
+        </article>
+
+        <article class="project panel">
+          <div class="project__top">
+            <span class="project__badge badge--lime">experiments</span>
+            <a class="project__ext" href="https://github.com/sashyo" target="_blank" rel="noopener" aria-label="More on GitHub">↗</a>
+          </div>
+          <h3 class="project__name">…and more</h3>
+          <p class="project__tagline">A trail of repos, prototypes and half-finished ideas.</p>
+          <p class="project__body">
+            From a Java electronic trading platform to crypto experiments and tooling, I treat
+            side projects as a sandbox for whatever I'm trying to learn next.
+          </p>
+          <ul class="project__tech">
+            <li>Java</li><li>Tinkering</li><li>Learning in public</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section id="stack" class="section">
+      <div class="section__head">
+        <h2 class="section__title">stack &amp; curiosities</h2>
+        <span class="section__num">04</span>
+      </div>
+      <div class="stack">
+        <div class="stack__group panel panel--yellow">
+          <h3>Build with</h3>
+          <div class="stack__chips">
+            <span class="chip">TypeScript</span><span class="chip">Rust</span><span class="chip">Java</span>
+            <span class="chip">Node.js</span><span class="chip">React</span><span class="chip">C#</span>
+          </div>
+        </div>
+        <div class="stack__group panel panel--cyan">
+          <h3>Curious about</h3>
+          <div class="stack__chips">
+            <span class="chip">Threshold crypto</span><span class="chip">MPC</span><span class="chip">Zero-knowledge</span>
+            <span class="chip">Post-quantum</span><span class="chip">Protocol design</span>
+          </div>
+        </div>
+        <div class="stack__group panel panel--pink">
+          <h3>Working in</h3>
+          <div class="stack__chips">
+            <span class="chip">Distributed systems</span><span class="chip">Identity / IAM</span>
+            <span class="chip">Zero trust</span><span class="chip">Decentralisation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <div class="contact panel panel--accent">
+        <h2 class="contact__title">Let's build something.</h2>
+        <p class="contact__sub">
+          Want to talk cryptography, open source, or trade notes on hard problems? I'm always up for it.
+        </p>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="https://github.com/sashyo" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/sashale/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn--ghost" href="https://tide.org" target="_blank" rel="noopener">Tide Foundation ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <span class="footer__sig">&gt;_ sashyo</span>
+    <span class="footer__note">built by hand · still learning · <span id="year"></span></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
