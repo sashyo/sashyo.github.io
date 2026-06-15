@@ -1,4 +1,4 @@
-/* sashyo — portfolio interactions */
+/* sashyo - portfolio interactions */
 (() => {
   "use strict";
 
