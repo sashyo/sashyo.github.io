@@ -298,35 +298,14 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
 /* ============================================================
    ABOUT
    ============================================================ */
-.about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: stretch; }
+.about { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: start; }
 .about__card p { margin-bottom: 1rem; font-size: 1.05rem; }
 .about__card p:last-child { margin-bottom: 0; }
 
-/* wrapper stretches to the about card's height; facts fill it and scroll */
-.about__facts-wrap { position: relative; }
-.about__facts {
-  position: absolute;
-  inset: 0;
-  list-style: none;
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: max-content;
-  overflow-y: auto;
-  background: #fff;
-  border: var(--border);
-  box-shadow: var(--shadow);
-  padding: 1rem 1.1rem;
-  scrollbar-width: thin;
-  scrollbar-color: var(--ink) transparent;
-}
-/* chunky neubrutalist scrollbar (webkit) */
-.about__facts::-webkit-scrollbar { width: 12px; }
-.about__facts::-webkit-scrollbar-track { background: var(--bg); border-left: 2px solid var(--ink); }
-.about__facts::-webkit-scrollbar-thumb { background: var(--ink); border: 2px solid var(--bg); }
+.about__facts { list-style: none; display: grid; gap: 1rem; }
 .about__facts li {
   display: flex; align-items: baseline; justify-content: space-between;
   padding: 1rem 1.2rem;
-  flex-shrink: 0;
 }
 .about__k { font-family: var(--font-mono); font-weight: 700; text-transform: uppercase; font-size: .75rem; opacity: .75; }
 .about__v { font-family: var(--font-display); font-size: 1.05rem; }
@@ -453,8 +432,6 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
   }
   .hero__card { margin-top: 2rem; transform: rotate(1deg); }
   .about, .work, .stack { grid-template-columns: 1fr; }
-  /* on mobile, stack normally with a capped scroll height */
-  .about__facts { position: static; inset: auto; max-height: 360px; }
   .projects { grid-template-columns: 1fr; }
   .project--feature { grid-column: span 1; }
 
