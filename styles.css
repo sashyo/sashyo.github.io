@@ -302,10 +302,28 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
 .about__card p { margin-bottom: 1rem; font-size: 1.05rem; }
 .about__card p:last-child { margin-bottom: 0; }
 
-.about__facts { list-style: none; display: grid; gap: 1rem; }
+.about__facts {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  /* fixed-height scroll panel: shows ~5 facts, rest scroll */
+  height: 384px;
+  overflow-y: auto;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--ink) transparent;
+}
+/* chunky neubrutalist scrollbar (webkit) */
+.about__facts::-webkit-scrollbar { width: 12px; }
+.about__facts::-webkit-scrollbar-track { background: var(--bg); border-left: 2px solid var(--ink); }
+.about__facts::-webkit-scrollbar-thumb { background: var(--ink); border: 2px solid var(--bg); }
 .about__facts li {
   display: flex; align-items: baseline; justify-content: space-between;
   padding: 1rem 1.2rem;
+  flex-shrink: 0;
 }
 .about__k { font-family: var(--font-mono); font-weight: 700; text-transform: uppercase; font-size: .75rem; opacity: .75; }
 .about__v { font-family: var(--font-display); font-size: 1.05rem; }
@@ -323,6 +341,20 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
   content: "✦"; position: absolute; left: 0; top: 0; font-weight: 700;
 }
 .work__chips { display: flex; flex-wrap: wrap; gap: .5rem; align-content: flex-start; }
+
+/* secondary / past role card */
+.work-past { margin-top: 1.5rem; }
+.work-past .work__role { display: flex; align-items: baseline; gap: .8rem; flex-wrap: wrap; }
+.work-past .work__desc { margin: .8rem 0 1rem; }
+.work__org--past {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: .8rem;
+  background: var(--ink);
+  color: var(--bg);
+  border: var(--border);
+  padding: .15rem .5rem;
+}
 
 .chip {
   font-family: var(--font-mono);
