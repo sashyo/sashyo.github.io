@@ -208,8 +208,12 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
 .hero__sub {
   grid-area: sub;
   font-size: 1.1rem;
-  max-width: 34ch;
+  max-width: 38ch;
   margin: 1.1rem 0 0;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.15rem;
 }
 .inline-link {
   font-weight: 700;
