@@ -193,9 +193,13 @@ em { font-style: normal; background: var(--lime); padding: 0 .15em; box-shadow: 
   display: inline-block;
   transform: rotate(-1deg);
 }
+/* slot reserves a fixed 2-line height so the layout never jumps as text types */
+.hero__rotator-slot {
+  display: block;
+  min-height: 2.2em;
+}
 .hero__rotator {
   display: inline-block;
-  min-height: 1.1em;
   color: var(--ink);
   background: var(--yellow);
   border: var(--border);
